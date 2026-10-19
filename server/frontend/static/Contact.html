@@ -1,0 +1,112 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Cars Dealership</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .contact-heading {
+            text-align: center;
+            color: #173b65;
+            margin-bottom: 12px;
+        }
+        .contact-intro {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+            margin-bottom: 35px;
+        }
+        .contact-card {
+            padding: 24px;
+            text-align: center;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
+        }
+        .contact-card img {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 12px;
+        }
+        .contact-card h3 {
+            color: #173b65;
+            margin: 8px 0;
+        }
+        .contact-card a {
+            color: #1769aa;
+            text-decoration: none;
+            overflow-wrap: anywhere;
+        }
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+        .contact-message {
+            padding: 24px;
+            background: #eef5fb;
+            border-radius: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Cars Dealership</div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Contact.html" class="active" aria-current="page">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main class="contact-container">
+        <h1 class="contact-heading">Contact Us</h1>
+        <p class="contact-intro">
+            Have a question about a dealership or a vehicle? We'd love to hear from you.
+        </p>
+
+        <section class="contact-grid" aria-label="Contact information">
+            <article class="contact-card">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300"
+                     alt="Customer support representative">
+                <h3>Customer Support</h3>
+                <p>Get help with your account, reviews, and dealership information.</p>
+                <p>Email: <a href="mailto:support@example.com">support@example.com</a></p>
+            </article>
+
+            <article class="contact-card">
+                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300"
+                     alt="Business relations representative">
+                <h3>Dealer Relations</h3>
+                <p>Contact us about dealership listings and business partnerships.</p>
+                <p>Email: <a href="mailto:dealers@example.com">dealers@example.com</a></p>
+            </article>
+
+            <article class="contact-card">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300"
+                     alt="Technical support representative">
+                <h3>Technical Support</h3>
+                <p>Let us know if you experience technical issues with the website.</p>
+                <p>Email: <a href="mailto:technical@example.com">technical@example.com</a></p>
+            </article>
+        </section>
+
+        <section class="contact-message">
+            <h2>We're Here to Help</h2>
+            <p>Send us an email and include a short description of how we can assist you.</p>
+        </section>
+    </main>
+</body>
+</html>
